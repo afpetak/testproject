@@ -1,8 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-        @foreach ($blogs as $blog)
-
+    
         <div class="card mb-4">
           <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
           <div class="card-body">
@@ -16,5 +15,4 @@
           </div>
         </div>
 
-        @endforeach
 @endsection

@@ -74,18 +74,18 @@
           </div>
         </div>
         
-        @foreach ($blogs as $b)
+        @foreach ($blogs as $blog)
 
         <div class="card mb-4">
           <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
           <div class="card-body">
-            <h2 class="card-title">{{ $b->title}}</h2>
-            <p class="card-text">{{ $b->body }}</p>
+            <h2 class="card-title">{{ $blog->title}}</h2>
+            <p class="card-text">{{ $blog->body }}</p>
             <a href="{{ route('public::show', $b) }}" class="btn btn-primary">Read More &rarr;</a>
           </div>
           <div class="card-footer text-muted">
-            Posted on {{$b->created_at->diffForHumans()}} by
-            <a href="#">{{ $b->author}}</a>
+            Posted on {{$blog->created_at->diffForHumans()}} by
+            <a href="#">{{ $blog->author}}</a>
           </div>
         </div>
 

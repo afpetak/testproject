@@ -81,7 +81,7 @@
           <div class="card-body">
             <h2 class="card-title">{{ $b->title}}</h2>
             <p class="card-text">{{ $b->body }}</p>
-            <a href="#" class="btn btn-primary">Read More &rarr;</a>
+            <a href="{{ route('public::show', $b) }}" class="btn btn-primary">Read More &rarr;</a>
           </div>
           <div class="card-footer text-muted">
             Posted on {{$b->created_at->diffForHumans()}} by

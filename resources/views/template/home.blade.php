@@ -74,7 +74,7 @@
           </div>
         </div>
         
-        @foreach ($blog as $b)
+        @foreach ($blogs as $b)
 
         <div class="card mb-4">
           <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">

@@ -8,7 +8,7 @@ use App\Blog;
 class PublicController extends Controller
 {
     public function index(){
-        //$blogs = Blog::all();
+    $blogs = Blog::all();
         return view('template.home')->with(compact('blogs'));
     }
 
